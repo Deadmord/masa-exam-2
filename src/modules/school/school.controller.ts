@@ -22,7 +22,7 @@ class SchoolController {
     }
 
     async getBoardTypeById(req: Request, res: Response, next: NextFunction) {
-        const numericParamOrError: number = RequestHelper.ParseNumericInput(req.params.id)
+        const numericParamOrError: number | systemError= RequestHelper.ParseNumericInput(req.params.id)
         if (typeof numericParamOrError === "number") {
             if (numericParamOrError > 0) {
                 SchoolService.getBoardTypeById(numericParamOrError)
@@ -54,8 +54,8 @@ class SchoolController {
             });
     }
 
-    async updateBoardType(req: Request, res: Response, next: NextFunction) {
-        const numericParamOrError: number = RequestHelper.ParseNumericInput(req.params.id);
+    async updateBoardTypeById(req: Request, res: Response, next: NextFunction) {
+        const numericParamOrError: number | systemError = RequestHelper.ParseNumericInput(req.params.id);
         
         if (typeof numericParamOrError === "number") {
             if (numericParamOrError > 0) {

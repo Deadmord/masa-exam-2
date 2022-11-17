@@ -5,6 +5,8 @@ export class SqlParameters {
 }
 
 export class Queries {
+    public static GetUserByLogin: string = "SELECT id, password, role_id FROM [user] WHERE login = ?";
+    
     public static WhiteBoardTypes: string = "SELECT * FROM white_board_type WHERE status_id = ?";
     public static SelectIdentity: string = "SELECT SCOPE_IDENTITY() AS id;";
 
