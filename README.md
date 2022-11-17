@@ -94,10 +94,11 @@
 
 16. **You received a bug stating the following: "Intermittemtly this method results in an exception in the command line reporting of a Null reference." You're required to find and fix the problem in this method:** *=> 10 points*
 
-		public static addWeeks(date: Date, value: number): Date {
-            date.setDate(date.getDate() + (value * 7));
-            return date;
-        }
+    public static addWeeks(date: Date, value: number): Date {
+        const tempDate = new Date(date);
+        tempDate.setDate(tempDate.getDate() + (7 * value));
+        return tempDate;
+    }
 
 17. **Having the following DB tables diagram:** *=> 10 points*
 
@@ -111,13 +112,32 @@ You need to write a query that returns for each user a full data. Consider that 
 | Mary Smith | Klark Smith | Cashier |
 | Patrice Raymond | Not an eployee |  |
 
+	SELECT U.first_name + ' ' + U.last_name [Full name], 
+		(SELECT CU.first_name + ' ' + CU.last_name
+		FROM [user] CU
+		WHERE U.create_user_id = CU.id) [Created By],
+		(CASE
+			WHEN Pos.title IS NULL THEN 'Not an employee'
+			ELSE Pos.title
+		END) Position
+	FROM [user] U
+	LEFT JOIN employee Emp ON U.id = Emp.id
+	LEFT JOIN position Pos ON Pos.id = Emp.position_id
+
+
 18. **Write a method in JS/TS that gets as an argument 2 dates and returns a boolean value of whether those dates share the same month**. *=> 5 points*
+
+	function isSameMonth(firstDate: Date, secondDate: Date): boolean {
+		return (firstDate.getMonth() === secondDate.getMonth()&&firstDate.getFullYear() === secondDate.getFullYear());
+	}
 
 19. **Explain the following piece of code:** *=> 5 points*
 
         public static dictionaryToArrayOfObjects<T>(input: _.Dictionary<T>): T[] {
             return _.map(Object.getOwnPropertyNames(input), (key: string) => input[key]);
         }
+
+		This function input a dictionary and returns a set of its properties.
 
 20. **Fix the following code and fill the required gaps in it by the coding standards. The purpose of this code is to verify the user is a member of a specific role and in case the user is, a true return value should be returned by the isUserPermitted() method, otherwise false. Treat the comments as actual code written that should not be changed.** *=> 15 points*
 
