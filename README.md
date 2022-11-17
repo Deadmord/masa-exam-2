@@ -10,7 +10,7 @@
 
 1. **What is Repro steps?** *=> 2 points*
  - [ ] Logical steps for planning the structure of DB repository
- - [ ] Steps that are required in order to reproduce a bug in the system
+ - [*] Steps that are required in order to reproduce a bug in the system
  - [ ] Sequence of actions required to build a new nodejs server
  - [ ] A process of creation of a new Github repository
 
@@ -18,52 +18,52 @@
  - [ ] Get the request from the router, treat the request parameters, prepare the response of the server to the consumer
  - [ ] Keep state of a specific logic portion of the system, provide processing of the data passed from the different controllers, parse the data and returned the processed response
  - [ ] To be the first element in the system that should service the consumer for his CRUD request to the server
- - [ ] To provide services to the system that do not require a state but should be used across the whole system
+ - [*] To provide services to the system that do not require a state but should be used across the whole system
 
 3. **What is a foreign key?** *=> 2 points*
  - [ ] A key by which the JWT token is signed
  - [ ] A pair security key for a private key. This key is stored in online repository for asymmetric encryption processing
- - [ ] A way to link between 2 tables in the relational DB
+ - [*] A way to link between 2 tables in the relational DB
  - [ ] Such a term does not exist
 
 4. **What is the code of a request redirection in HTTP protocol?** *=> 2 points*
  - [ ] 2xx
- - [ ] 3xx
+ - [*] 3xx
  - [ ] 4xx
  - [ ] 5xx
 
 5. **What is a Jira ticket?** *=> 2 points*
- - [ ] A definition of a task that should be done or details of a bug opened in the system
+ - [*] A definition of a task that should be done or details of a bug opened in the system
  - [ ] A ticket by which the symmtric authentication is being processed. This key is tored in the operating system
  - [ ] A portion of data used to authenticate against a nodejs server
  - [ ] A synonym for a JWT token
 
 6. **Which npm package willl you use to get numerous help methods for arrays? (more than a single answer can be selected)** *=> 2 points*
- - [ ] Underscore
+ - [*] Underscore
  - [ ] Nodemon
- - [ ] Lodash
+ - [*] Lodash
  - [ ] All answers are correct
 
 7. **What is needed for enhancement of a security level of a JWT token?** *=> 2 points*
  - [ ] Password
  - [ ] Encryption
  - [ ] A private key
- - [ ] Secret
+ - [*] Secret
 
 8. **What is dotenv?** *=> 2 points*
  - [ ] An environment of an operational system like release, production, etc.
- - [ ] An npm package that provides the ability to set different system parameters for different system environments
+ - [*] An npm package that provides the ability to set different system parameters for different system environments
  - [ ] A library of .Net nodejs environment
  - [ ] An npm package that is added by default while creating a new nodejs server
 
 9. **How will you ensure a specific value in a DB column that is not the IDENTITY column will not be duplicate? (more than a single answer can be selected)** *=> 2 points*
  - [ ] Add another private key on this column
- - [ ] Add a UNIQUE CONSTRAINT to this column
- - [ ] Add a UNIQUE INDEX to this column
+ - [*] Add a UNIQUE CONSTRAINT to this column
+ - [*] Add a UNIQUE INDEX to this column
  - [ ] I will add a method on my server to ensure no duplicates are recorded in the DB for this column
 
 10. **What is a log level** *=> 2 points*
- - [ ] Log level is a level at which and up log messages will be recorded in any log target
+ - [*] Log level is a level at which and up log messages will be recorded in any log target
  - [ ] It's a level of details to which a design of a task should be aligned
  - [ ] A level of DB logs storage to provide log shipping for a better system performance
  - [ ] There is no correct answer
