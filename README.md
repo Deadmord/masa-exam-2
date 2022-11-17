@@ -1,9 +1,12 @@
+Belokonenko Nikolay
+
 
 # Masa exam: nodejs : Take 2
 
 ## Part I: Theory
 
 *Please, do NOT use online resources as an assistance for this part of the exam*
+
 
 
 ## Section A: Please, select the correct answer or the most close to the correct one *=> 20 points:*
