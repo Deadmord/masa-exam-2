@@ -71,15 +71,21 @@
 
 ## Section B: Please, explain the following terms the best way you can *=> 22 points*
 
-11. **Constructor** *=> 4 points*
+11. **Constructor** 
+	A constructor is a class method that is required to initialize class variables. 	
 
-12. **Connection string** *=> 4 points*
+12. **Connection string** 
+	DB Connection string is a string containing information about the database name, connection parameters, and the database connection driver used when initializing the express server.
 
-13. **IDENTITY & SEED** *=> 5 points*
+13. **IDENTITY & SEED**
+	The IDENTITY attribute allows you to make a column of numeric type (INT, NUMERIC...) identifier. And the value of this column will be incremented automatically when new data is added to the table.
+	SEED point to the value from which the countdown will start. To initialize the SEED initial value, you can use a query DBCC CHECKIDENT ([table_name], RESEED, *last_number_id*).
 
-14. **Abstract class** *=> 5 points*
+14. **Abstract class** 
+	An abstract class is a class that can be inherited, but cannot be implemented.
 
-15. **Export keyword in nodejs code** *=> 4 points*
+15. **Export keyword in nodejs code**
+	The export keyword is a command for the compiler that allows you to export a class, definition, or the object itself from a module, to use the object it must be imported in the target module.
 
  
 ## Part II: Practice on paper *=> 45 points*
